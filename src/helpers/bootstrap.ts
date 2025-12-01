@@ -14,6 +14,9 @@ import {
 } from "@livequery/nestjs";
 import { WsAdapter } from "@nestjs/platform-ws";
 
+
+export type AppConfig =  ModuleMetadata & { isApiGateway?: boolean, name: string, port?:number  }
+
 export class Application {
     static async start({
         name = '?',
@@ -21,8 +24,9 @@ export class Application {
         controllers = [],
         exports = [],
         providers = [],
-        isApiGateway
-    }: ModuleMetadata & { isApiGateway?: boolean, name?: string }, port?: number) {
+        isApiGateway,
+        port
+    }: AppConfig) {
 
 
 

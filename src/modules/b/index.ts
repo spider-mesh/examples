@@ -6,6 +6,7 @@ import { ServiceBController } from "./controller";
 
 Application.start({
     name: 'ServiceB',
+    // port: 3002 // Optional: specify a port
     providers: [
         B,
         NestJSLinkMicroservice(A)
