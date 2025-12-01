@@ -3,16 +3,21 @@
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
+    "@livequery/types": "^2.0.22",
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
+    "@livequery/nestjs": "^2.0.46",
     "@nestjs/common": "^11.1.9",
     "@nestjs/core": "^11.1.9",
+    "@nestjs/platform-express": "^11.1.9",
+    "@nestjs/platform-ws": "^11.1.9",
     "@spider-mesh/core": "^2.0.17",
     "@spider-mesh/tcp": "^2.0.18",
+    "get-port": "^7.1.0",
     "rxjs": "^7.8.2"
   }
 }

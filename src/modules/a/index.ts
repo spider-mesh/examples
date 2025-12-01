@@ -1,6 +1,9 @@
 import { A } from "./A";
-import { bootstrap } from "../../helpers/bootstrap";
+import { Application } from "../../helpers/bootstrap";
+import { ServiceAController } from "./controller";
 
-bootstrap({
-    providers: [A]
+Application.start({
+    name: 'ServiceA',
+    providers: [A],
+    controllers: [ServiceAController]
 })
