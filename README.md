@@ -2,6 +2,11 @@
 
 Install BunJS first
 
+Install dependeces: 
+```bash
+bun install
+```
+
 Run service A:
 ```bash
 bun run src/modules/a
