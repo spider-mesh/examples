@@ -7,6 +7,11 @@ Install dependeces:
 bun install
 ```
 
+Run api gateway:
+```bash
+bun run src/modules/api-gateway
+```
+
 Run service A:
 ```bash
 bun run src/modules/a
