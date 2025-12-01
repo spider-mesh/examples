@@ -1,15 +1,14 @@
-# examples
+# Example microservice with @spider-mesh
 
-To install dependencies:
+Install BunJS first
 
+Run service A:
 ```bash
-bun install
+bun run src/modules/a
 ```
 
-To run:
+Run service B:
 
 ```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.2.20. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+bun run src/modules/b
+``` 
